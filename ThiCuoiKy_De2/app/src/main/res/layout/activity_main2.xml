@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#247635"
+        android:text="Money Manager" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xanhla">
+        <Button
+            android:id="@+id/btn_Edit_cost"
+            android:text="Update Cost"
+            android:textColor="#247936"
+            android:background="@drawable/duongvien_goctron"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/Total_cost"
+            android:textSize="30dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/show_cost"
+               android:layout_width="0dp"
+               android:layout_weight="4"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:textSize="25dp"/>
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:textSize="25sp"
+               android:text="VNĐ"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_add_new"
+        android:textColor="#247936"
+        android:background="@drawable/duongvien_goctron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Add" />
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+    </ListView>
+
+</LinearLayout>
